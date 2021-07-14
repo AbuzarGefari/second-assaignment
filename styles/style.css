@@ -195,7 +195,7 @@ footer {
 
 /*-------------------------------------------- media Queres start--------------------------------*/
 
-/* mobile Devices */
+/* ------------------mobile Devices start--------------------- */
 @media (max-width : 688px) {
 .header-content {
   width: 100%;
@@ -249,7 +249,12 @@ footer {
 
 
 }
-/* tablet devices */
+
+/*------------------ mobile Devices end--------------------- */
+
+
+
+/*-------------------- tablet devices start -------------------------*/
 @media (min-width : 688px) and (max-width :1000px) {
  .header_content {
         width: 100%;
@@ -300,3 +305,4 @@ footer {
           align-items: center;
       }
 }
+/*----------------------- tablet devices end -------------------------- */
