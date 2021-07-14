@@ -12,21 +12,33 @@ body {
 
 
 /* --------header part start -------- */
-header {
-    display: flex;
-    background: #2D25A0;
-    width: 100%;
-    height: 677px;
 
+.header-content{
+   width:100vw;
+   background: #2D25A0;
+   padding-top: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 80px;}
+  
+
+
+
+.header-content .half-width {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding-left: 30px;
 }
-
-.half-width {
-    padding-top: 100px;
-    padding-left: 56px;
-    width:100%;
+   .half-width.half-width.left-conten{
+width: 50%;
 }
+   
 
-.half-width h1 {
+.half-width.half-width.left-content h1{
     font-size: 64px;
     font-weight: 700;
     color: white;
@@ -53,13 +65,11 @@ header {
 .half-width img:hover{
 transform:rotateY(180deg);
 }
-/* header part end  */
+/*------------------ ---header part end ---------------------- */
+
+
+/*---------------------- main section start -------------------*/
 section {
-    /* margin-top: 70px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px; */
-       
     width: 100%;
 }
 .player-list{
@@ -94,8 +104,74 @@ flex-direction: column;
     width: 300px;
     height: 256px;
 }
+/*----------------- main section end ------------------ */
+/*----------------- balondr section start ------------------- */
 
-/* footer section  */
+.balondr h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #2D25A0;
+}
+
+.balondr-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.balondr-image img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.balondr-players {
+
+    width: 99%;
+    box-shadow:
+}
+
+.balondr-players img {
+    width: 300px;
+    height: 300px;
+}
+
+.select-player {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    background: #2D25A0;
+    margin-left: 35%;
+    margin-right: 35%;
+
+}
+
+/* -----------balondr section end ----------- */
+
+/*-------------- Fcb Club All Player List start-------------- */
+
+.fcb-club h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #2D25A0;
+
+}
+
+.fcb-players {
+    display: flex;
+    justify-content: center;
+}
+
+.fcb-players h2 {
+    color: #2D25A0;
+}
+
+
+/* ------------------Fcb Club All Player List end------------------------------ */
+
+/*------------- footer section start------------------- */
 footer {
     text-align: center;
 
@@ -113,58 +189,114 @@ footer {
 .icon p {
     font-size: 18px;
 }
-
-/* balondr section  */
-
+/*------------------------------------------- footer section end ------------------------------ */
 
 
 
-.balondr h1{
-    font-size: 50px;
-    text-align: center;
-    color: lightsalmon;
-}
-.balondr-image{
-     display:flex;
-     justify-content: center;
-     align-items: center;
-   
-}
-.balondr-image img{
-    width: 300px;
-    height: 300px;
+/*-------------------------------------------- media Queres start--------------------------------*/
+
+/* mobile Devices */
+@media (max-width : 688px) {
+.header-content {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin:0;
     
 }
-.balondr-players{
+.header-content .half-width{
+      width: 100%;
+      align-items: center;
+}
+.half-width.left-content{
+      width: 90%;
+      margin-bottom: 50px;
+}
+.half-width.left-content h1{
+     font-size: 34px;
+     color: white;
+     margin-bottom: 20px;
+     text-align: center;
+}
+.right-content img{
+      width: 300px;
+      height: 238px;
+      padding-top: 60px;
+}
+.players {
+    grid-template-columns: repeat(1, 1fr);
+}
 
-    width: 99%;
-   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-   rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-   rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-   rgba(0, 0, 0, 0.06) 0px 2px 1px,
-   rgba(0, 0, 0, 0.09) 0px 4px 2px,
-   rgba(0, 0, 0, 0.09) 0px 8px 4px,
-   rgba(0, 0, 0, 0.09) 0px 16px 8px,
-   rgba(0, 0, 0, 0.09) 0px 32px 16px;
+.fcb-players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items:center;
+}
+.balondr-players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   
 }
 .balondr-players img{
-    width: 300px;
-    height: 300px;
+     justify-content: center;
+     align-items: center;
 }
-.select-player{
-    margin-top: 30px;
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 30px;
-    background: #2D25A0;
-    margin-left: 35%;
-    margin-right: 35%;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-    rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+.logo img{
+    width: 300px;
+  
+}
+
+
+}
+/* tablet devices */
+@media (min-width : 688px) and (max-width :1000px) {
+ .header_content {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header_content .half-width {
+        width: 100%;
+        align-items: center;
+    }
+
+    .half-width.left_content {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .half-width.left_content h1 {
+        font-size: 40px;
+        color: white;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .right-content img {
+        width: 360px;
+        height: 238px;
+        padding-top: 60px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+      .player-image img {
+          width: 97%;
+          height: 256px;
+      }
+
+      .balondr-players {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+
+      }
+
+      .fcb-players {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          align-items: center;
+      }
 }
