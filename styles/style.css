@@ -23,7 +23,7 @@ header {
 .half-width {
     padding-top: 100px;
     padding-left: 56px;
-    width: 80%;
+    width:100%;
 }
 
 .half-width h1 {
@@ -38,36 +38,56 @@ header {
     align-items: flex-start;
     padding: 10px 24px;
     background: #E02C6D;
+     transition: all .2s linear;
+    
+}
+.half-width a:hover{
+ letter-spacing: 1px;
 }
 
 .half-width img {
-    width: 556.01px;
+    width: 556px;
     height: 438px;
-    
+      transition: transform .3s linear;
 }
-
+.half-width img:hover{
+transform:rotateY(180deg);
+}
 /* header part end  */
 section {
-    margin-top: 70px;
+    /* margin-top: 70px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; */
+       
+    width: 100%;
+}
+.player-list{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+     margin-top:60px;
 
 }
 
 .player {
-    Width: 300px;
+    Width: 315px;
     Height: 474px;
     margin: auto;
-    padding: 10px;
+    padding-top:15px;
+    padding-left: 15px;
+
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin-right: 0px;
-    margin-bottom: 15px;
+   
+    margin-bottom: 10px;
 }
 
 .player-image img {
@@ -92,4 +112,59 @@ footer {
 
 .icon p {
     font-size: 18px;
+}
+
+/* balondr section  */
+
+
+
+
+.balondr h1{
+    font-size: 50px;
+    text-align: center;
+    color: lightsalmon;
+}
+.balondr-image{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+   
+}
+.balondr-image img{
+    width: 300px;
+    height: 300px;
+    
+}
+.balondr-players{
+
+    width: 99%;
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+   rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+   rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+   rgba(0, 0, 0, 0.06) 0px 2px 1px,
+   rgba(0, 0, 0, 0.09) 0px 4px 2px,
+   rgba(0, 0, 0, 0.09) 0px 8px 4px,
+   rgba(0, 0, 0, 0.09) 0px 16px 8px,
+   rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.balondr-players img{
+    width: 300px;
+    height: 300px;
+}
+.select-player{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    background: #2D25A0;
+    margin-left: 35%;
+    margin-right: 35%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
